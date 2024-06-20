@@ -1,0 +1,7 @@
+{
+  "name": "tired",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
