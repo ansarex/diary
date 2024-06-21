@@ -1,0 +1,14 @@
+ion-header {
+    --ion-toolbar-background: var(--ion-color-dark);
+    /* Your custom color */
+
+    ion-button {
+        --ion-toolbar-color: white
+    }
+  }
+
+  ion-title {
+
+    text-align: center;
+    margin-left: 10px;
+  }

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Notes</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-input value="{{currentDate}}" readonly></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Title</ion-label>
+    <ion-input [(ngModel)]="noteTitle"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Notes</ion-label>
+    <ion-textarea [(ngModel)]="noteText"></ion-textarea>
+  </ion-item>
+
+ 
+  <ion-button expand="full" (click)="saveNote()">Save</ion-button>
+</ion-content>

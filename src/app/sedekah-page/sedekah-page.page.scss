@@ -1,0 +1,28 @@
+ion-header {
+    --ion-toolbar-background: var(--ion-color-dark);
+    /* Your custom color */
+    ion-title {
+      text-align: center;
+      font-family: 'regular';
+    }
+  }
+  
+  .content {
+    min-height: 100vh;
+    background-color: var(--ion-color-primary);
+    padding: 20px;
+  
+    p {
+      text-align: center;
+    }
+  }
+
+  .icon-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    ion-icon {
+        font-size: 40px;
+    }
+  }

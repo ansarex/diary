@@ -1,0 +1,43 @@
+.main{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ion-tab-bar {
+    --color-selected: var(--ion-color-primary);
+    --color: var(--ion-color-medium);
+    --indicator-color: var(--ion-color-primary);
+    --highlight-color: var(--ion-color-primary);
+  }
+  
+  ion-label {
+    font-family: "semi";
+  }
+
+  ion-tab-button {
+    --color-selected: var(--ion-color-primary);
+    --color: var(--ion-color-secondary);
+    --ripple-color: var(--ion-color-primary);
+  }
+  
+  ion-tab-button[aria-selected="true"] {
+    background: rgba(var(--ion-color-primary-rgb), 0.1);
+    box-shadow: 0 2px 8px rgba(var(--ion-color-primary-rgb), 0.3);
+  }
+  ion-tab-bar {
+    --background: var(--ion-color-dark); /* Background color of the tab bar */
+    --border-color: transparent;
+    --color: #8e8e93; /* Color of the tab icons and labels */
+    --color-selected: #f8f8f8; /* Color of the selected tab icon and label */
+  }
+  
+  ion-tab-bar.btm-navbar ion-tab-button {
+    --ripple-color: #f8f8f8; /* Ripple effect color */
+  }
+  
+  ion-tab-bar.btm-navbar ion-tab-button[aria-selected="true"] {
+    background: rgba(255, 255, 255, 0.1); /* Background color of the selected tab */
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2); /* Shadow effect on selected tab */
+  }
+  

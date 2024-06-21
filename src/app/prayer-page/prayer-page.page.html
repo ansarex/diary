@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Daily Prayers</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="content">
+    <p class="m-0"> Current time: {{ currentTime | date:'mediumTime' }}</p>
+    <div class="list-prayers" *ngFor="let prayer of prayers;">
+
+      <div class="prayers-container">
+        <h1>{{prayer.name}}</h1>
+        <ion-avatar slot="start" (click)="toggleStatus(prayer)"
+          [ngStyle]="{'background-color': prayer.status ? 'green' : 'red'}">
+
+        </ion-avatar>
+      </div>
+
+    </div>
+
+      <div class="btn-container" (click)="goto()">
+        <p>Summary</p>
+      </div>
+  </div>
+</ion-content>
